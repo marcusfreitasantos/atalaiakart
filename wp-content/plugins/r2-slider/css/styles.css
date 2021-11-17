@@ -1,0 +1,77 @@
+.item .mobile {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+.item .nomobile {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .item .nomobile {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .item .mobile {
+    display: block;
+  }
+}
+.slick-dots {
+  position: absolute;
+  bottom: -45px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 2px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  display: none;
+}
+.slick-dots li:before {
+  top: 1px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  content: "";
+  background-color: #ccc;
+  position: absolute;
+}
+.slick-dots li.slick-active:before {
+  background-color: #4f4949;
+}
+
+.slick-prev {
+  left: 25px !important;
+}
+
+.slick-next {
+  right: 25px !important;
+}
+
+.slick-arrow {
+  top: 50%;
+  height: 40px !important;
+  width: 40px !important;
+  margin-top: -13px;
+  font-size: 0;
+  position: absolute;
+  z-index: 500;
+  cursor: pointer;
+  background-color: transparent !important;
+  border: none;
+}

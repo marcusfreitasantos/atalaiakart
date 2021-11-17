@@ -1,0 +1,522 @@
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+a{
+  text-decoration: none;
+  margin: 0;
+  padding: 0 !important;
+}
+
+
+.section-img{
+  max-width: 260px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+
+
+/*TOP BAR*/
+.topbar{
+  width: 100%;
+  background-color: #3E455B;
+  position: relative;
+  z-index: 1;
+}
+
+.topbar-content{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.top-links{
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-links li{
+  padding: 0 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.top-links li a{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: .5s;
+}
+
+.top-links a:hover{
+  color: #B18D57;
+}
+
+.top-links i{
+  margin-right: 5px;
+}
+
+
+/*HEADER*/
+#header{
+  background-color: white;
+}
+
+#header ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 !important;
+
+}
+
+.nav-link{
+  font-size: .8rem;
+  color: #3E455B;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.nav-link:hover{
+  color: #B18D57 !important;
+}
+
+#header li{
+  padding-left: 15px;
+}
+
+
+.logo img{
+  max-width: 220px;
+  width: 100%;
+  padding: 10px;
+}
+
+.mobile-menu{
+  display: none !important;
+  width: 100%;
+  background: white;
+}
+
+.mobile-menu li{
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px !important;
+}
+
+.mobile-menu li a{
+  color: #808080 !important;
+}
+
+.showMenu{
+  display: block !important;
+  animation: showMenuAnimation .5s forwards;
+}
+
+
+@keyframes showMenuAnimation{
+  from{
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to{
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+#hamburger{
+  display: none;
+  border: none;
+  color: #3E455B;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.4rem;
+	background: none;
+}
+
+
+
+/*CALL TO ACTION*/
+.cta{
+  background: url(../../img/cta-bg.jpg) center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.cta-title{
+  font-family: 'Ubuntu';
+  font-size: 4rem;
+  color: #3E455B;
+  font-weight: 600;
+}
+
+.cta-text{
+  color: #333;
+  font-size: 1.8rem;
+  margin: 20px 0;
+}
+
+.btn-primary{
+  background-color: #3E455B;
+  padding: 8px 16px !important;
+  text-transform: uppercase;
+  color: #fff;
+  transition: .3s;
+  margin: auto;
+  width: auto;
+  font-size: 0.8rem !important;
+  text-align: center;
+  border: none;
+}
+
+.btn-primary:hover{
+  background-color: #3E455B;
+  opacity: .8;
+}
+
+.btn-secondary{
+  background-color: #B18D57;
+  padding: 8px 16px !important;
+  text-transform: uppercase;
+  color: #fff;
+  transition: .3s;
+  margin: auto;
+  width: auto;
+  border: none;
+}
+
+.btn-secondary:hover{
+  opacity: .8;
+  background-color: #B18D57;
+
+}
+
+/*SLIDER*/
+.slick-dots{
+  display: none !important;
+}
+
+/*FOOTER*/
+.to-top{
+	padding: 10px;
+	background: #333;
+	border-radius: 5px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	transition: .5s;
+}
+.to-top a{
+	color: white !important;
+}
+.to-top:hover{
+	opacity: .8;
+}
+
+#footer{
+  padding: 60px 0;
+  background-color: #191B24;
+}
+
+.logo-footer{
+  max-width: 140px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#footer h6{
+  font-size: .9rem;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+#footer h6 a{
+  color: white !important;
+  transition: .5s;
+}
+
+#footer h6 a:hover{
+  color: #B18D57 !important;
+}
+
+#footer .nav-item{
+  padding: 5px 0;
+  border-bottom: 1px #ccc solid;
+  margin: 3px 0;
+}
+
+#footer .nav-item a{
+  color: #fff;
+}
+
+.bottom-bar{
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2D3141;
+  color: white;
+  width: 100%;
+}
+
+.bottom-content{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.widget-title{
+  margin: 30px 0;
+  padding-left: 5px;
+  font-size: 1.4rem;
+  color: #B18D57;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-left: 4px solid #B18D57;
+}
+
+
+
+/*QUEM SOMOS*/
+.quem-somos{
+  padding: 60px 0;
+}
+
+.section-title{
+  font-size: 3rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: #3E455B;
+  font-weight: bold;
+}
+
+.section-subtitle{
+  font-size: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: #3E455B;
+  font-weight: bold;
+}
+
+.text{
+  font-size: 1rem;
+  color: #808080;
+  line-height: 1.8rem;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+
+/*QUEM PODE PARTICIPAR*/
+.restricoes{
+	background-color: #eee;
+	padding: 60px 0;
+}
+.restricoes li{
+	list-style: bullets;
+	text-transform: uppercase;
+}
+
+
+/*HORÁRIOS*/
+.horarios{
+  background: url(../../img/horario-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 160px 0;
+}
+
+.horarios .section-title{
+  color: #b08c56;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+.horarios h3{
+  color: white;
+  font-size: 1.4rem;
+  padding: 10px 0;
+  border-bottom: 1px solid white;
+}
+
+
+
+
+/*GALERIA*/
+.galeria{
+  padding: 100px 0;
+}
+
+
+.card-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #E94E1A;
+}
+
+.card-text{
+  line-height: 1.8rem;
+  text-align: justify;
+  color: #808080;
+}
+
+
+
+
+.galery-thumbs{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  margin: 10px 0;
+}
+
+.galeria img{
+  transition: .5s;
+}
+
+.galeria img:hover{
+  opacity: 0.8;
+}
+
+
+/*BREADCRUMBS*/
+.breadcrumb{
+  padding: 20px;
+  background-color: #b08c56;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.2);
+  margin: 0;
+}
+
+.breadcrumb-title{
+  font-size: 2rem;
+}
+
+
+
+/*CONTATO*/
+.contato{
+  padding: 100px 0;
+  background: url("../../img/cta-bg.jpg") center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/*FORMULÁRIOS*/
+label{
+	width: 100%;
+	margin-top: 20px;
+}
+input, select, textarea, input, select, textarea{
+	padding: 15px;
+	background: #eee;
+	color: #333;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+	width: 100% !important;
+	border-radius: 5px;
+	font-weight: 500;
+}
+
+input[type=submit]{
+	background: #3E455B;
+	transition: .3s;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+}
+
+.input[type=submit]:hover{
+	opacity: .8;
+}
+
+.wpcf7-response-output{
+	background: #017c22;
+	color: white;
+}
+
+input, textarea{
+	border-radius: 5px !important;
+}
+
+
+
+
+
+/*MEDIA QUERIES*/
+@media(max-width: 40rem){
+  #header li{
+    padding: 15px 0;
+  }
+
+  #footer{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .row{
+    --bs-gutter-x: 0;
+  }
+  .topbar, .desktop-menu{
+    display: none !important;
+  }
+
+  #header .navbar{
+    align-items: center;
+  }
+
+  .logo img{
+    max-width: 200px;
+  }
+
+  .logo{
+    text-align: left;
+  }
+
+  #hamburger{
+    display: block;
+  }
+
+  header{
+    padding: 0 10px;
+  }
+
+  .cta-title{
+    font-size: 2rem;
+  }
+  
+  .cta-text{
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+
+  .bottom-bar{
+    text-align: center;
+  }
+
+  .bottom-content{
+    justify-content: center;
+  }
+
+
+  .contato{
+    padding: 100px 0;
+    background: url("../../img/contato-img.jpg") -600px center;
+    background-size: cover;
+  }
+  
+}
+
